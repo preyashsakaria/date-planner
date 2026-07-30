@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>An Invitation for Nina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mobile-frame">
+        <div class="roses"></div>
+        
+        <div class="app-container">
+            
+            <!-- Global Nav (Back button) -->
+            <div class="nav-bar" id="nav-bar">
+                <button class="btn-back" id="btn-back">←</button>
+            </div>
+
+            <!-- Step 1: The Ask -->
+            <section id="step-1" class="step active">
+                <div class="card">
+                    <div class="pre-title">YOU'VE BEEN INVITED</div>
+                    <h1 class="title"><span id="greeting">Hello</span> Nina,</h1>
+                    <h2 class="subtitle">Are you up for vibe-coding date?</h2>
+                    
+                    <div class="tenor-gif-embed" data-postid="5368357" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/cat-computer-typing-fast-gif-5368357">Cat Computer GIF</a>from <a href="https://tenor.com/search/cat-gifs">Cat GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+                    <div class="buttons-original">
+                        <button class="btn btn-primary" id="btn-yes">♥ Yes</button>
+                        <button class="btn btn-outline" id="btn-no">No</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 2: Yay! -->
+            <section id="step-2" class="step">
+                <div class="card">
+                    <h1 class="title" style="color: var(--btn-pink);">YAYY!</h1>
+                    <p class="subtitle">This is going to be so good.</p>
+                    
+                    <div class="tenor-gif-embed" data-postid="17725371557386627543" data-share-method="host" data-aspect-ratio="0.843373" data-width="100%"><a href="https://tenor.com/view/happy-happy-happy-happy-happy-cat-happy-dancing-cat-gif-17725371557386627543">Happy Happy Happy Happy GIF</a>from <a href="https://tenor.com/search/happy-gifs">Happy GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+                    <button class="btn btn-primary" id="btn-next-2">♥ Click me</button>
+                </div>
+            </section>
+
+            <!-- Step 3: Calendar -->
+            <section id="step-3" class="step">
+                <div class="card">
+                    <h1 class="title">When are you free?</h1>
+                    <p class="subtitle">Pick the moment that works best.</p>
+                    
+                    <div class="picker-container">
+                        <input type="date" id="date-picker" class="picker-input" />
+                    </div>
+                    <div class="picker-container">
+                        <input type="time" id="time-picker" class="picker-input" value="18:00" />
+                    </div>
+                    
+                    <button class="btn btn-primary" id="btn-next-3">Next</button>
+                </div>
+            </section>
+
+            <!-- Step 4: Food Vibes -->
+            <section id="step-4" class="step">
+                <div class="card">
+                    <h1 class="title">What are you feeling?</h1>
+                    <p class="subtitle">Pick your vibe.</p>
+                    
+                    <div class="image-grid" style="grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+                        <div class="grid-item food-option" data-value="Burger">
+                            <img src="assets/burger.jpg" alt="Burger">
+                            <div class="label">Burger</div>
+                        </div>
+                        <div class="grid-item food-option" data-value="Sushi">
+                            <img src="assets/sushi.jpg" alt="Sushi">
+                            <div class="label">Sushi</div>
+                        </div>
+                        <div class="grid-item food-option" data-value="Tacos">
+                            <img src="assets/tacos.jpg" alt="Tacos">
+                            <div class="label">Tacos</div>
+                        </div>
+                        <div class="grid-item food-option" data-value="Pizza">
+                            <img src="assets/pizza.jpg" alt="Pizza">
+                            <div class="label">Pizza</div>
+                        </div>
+                        <div class="grid-item food-option" data-value="Brunch">
+                            <img src="assets/brunch.jpg" alt="Brunch">
+                            <div class="label">Brunch</div>
+                        </div>
+                        <div class="grid-item food-option" data-value="Pasta">
+                            <img src="assets/italian.jpg" alt="Pasta">
+                            <div class="label">Pasta</div>
+                        </div>
+                        <div class="grid-item food-option" data-value="Ice Cream">
+                            <img src="assets/icecream.jpg" alt="Ice Cream">
+                            <div class="label">Ice Cream</div>
+                        </div>
+                        <div class="grid-item food-option" data-value="Coffee Date">
+                            <img src="assets/coffee.jpg" alt="Coffee Date">
+                            <div class="label">Coffee Date</div>
+                        </div>
+                        <div class="grid-item food-option" data-value="Fancy Drinks">
+                            <img src="assets/cocktail.jpg" alt="Fancy Drinks">
+                            <div class="label">Fancy Drinks</div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" id="btn-next-4">Next</button>
+                </div>
+            </section>
+
+            <!-- Step 5: Activity -->
+            <section id="step-5" class="step">
+                <div class="card">
+                    <h1 class="title">Let's do something fun!</h1>
+                    <p class="subtitle">Choose an activity.</p>
+                    
+                    <div class="image-grid" style="grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div class="grid-item act-option" data-value="Bowling">
+                            <img src="assets/bowling.jpg" alt="Bowling">
+                            <div class="label">Bowling</div>
+                        </div>
+                        <div class="grid-item act-option" data-value="Mini Golf">
+                            <img src="assets/minigolf.jpg" alt="Mini Golf">
+                            <div class="label">Mini Golf</div>
+                        </div>
+                        <div class="grid-item act-option" data-value="Movie">
+                            <img src="assets/movie.jpg" alt="Movie">
+                            <div class="label">Movie</div>
+                        </div>
+                        <div class="grid-item act-option" data-value="Picnic">
+                            <img src="assets/picnic.jpg" alt="Picnic">
+                            <div class="label">Picnic</div>
+                        </div>
+                        <div class="grid-item act-option" data-value="Museum">
+                            <img src="assets/museum.jpg" alt="Museum">
+                            <div class="label">Museum</div>
+                        </div>
+                        <div class="grid-item act-option" data-value="Cat café">
+                            <img src="assets/catcafe.jpg" alt="Cat café">
+                            <div class="label">Cat café</div>
+                        </div>
+                        <div class="grid-item act-option" data-value="Indoor Rock climbing">
+                            <img src="assets/climbing.jpg" alt="Rock climbing">
+                            <div class="label">Rock climbing</div>
+                        </div>
+                        <div class="grid-item act-option" data-value="Walk by the river">
+                            <img src="assets/river.jpg" alt="River Walk">
+                            <div class="label">River Walk</div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" id="btn-next-5">Next</button>
+                </div>
+            </section>
+
+            <!-- Step 6: Excitement -->
+            <section id="step-6" class="step">
+                <div class="card">
+                    <h1 class="title">How excited are you?</h1>
+                    <p class="subtitle">Rate your excitement</p>
+                    
+                    <div class="tenor-gif-embed" data-postid="15745696" data-share-method="host" data-aspect-ratio="1.07744" data-width="100%"><a href="https://tenor.com/view/yes-yeah-yey-happy-cheering-gif-15745696">Yes Yeah GIF</a>from <a href="https://tenor.com/search/yes-gifs">Yes GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+                    <div class="slider-container">
+                        <input type="range" min="1" max="10" value="5" class="slider" id="excitement-slider">
+                        <div class="slider-labels">
+                            <span>Meh</span>
+                            <span>On fire!</span>
+                        </div>
+                    </div>
+                    
+                    <div class="excitement-value">Your excitement: <span id="excitement-val">5</span></div>
+                    
+                    <button class="btn btn-primary" id="btn-next-6">Next</button>
+                </div>
+            </section>
+
+            <!-- Step 7: Receipt & WhatsApp -->
+            <section id="step-7" class="step">
+                <div class="card">
+                    <h1 class="title">Almost there!</h1>
+                    <p class="subtitle">Here's your picks - tap confirm to send them.</p>
+                    
+                    <div class="receipt">
+                        <div class="receipt-item">
+                            <div class="receipt-icon">📅</div>
+                            <div class="receipt-details">
+                                <div class="receipt-value" id="res-date">February 14, 2026</div>
+                                <div class="receipt-label">Date</div>
+                            </div>
+                        </div>
+                        <div class="receipt-item">
+                            <div class="receipt-icon">⏰</div>
+                            <div class="receipt-details">
+                                <div class="receipt-value" id="res-time">18:00</div>
+                                <div class="receipt-label">Time</div>
+                            </div>
+                        </div>
+                        <div class="receipt-item">
+                            <div class="receipt-icon">🍽️</div>
+                            <div class="receipt-details">
+                                <div class="receipt-value" id="res-food">Pizza</div>
+                                <div class="receipt-label">Vibe</div>
+                            </div>
+                        </div>
+                        <div class="receipt-item">
+                            <div class="receipt-icon">🎯</div>
+                            <div class="receipt-details">
+                                <div class="receipt-value" id="res-activity">Bowling</div>
+                                <div class="receipt-label">Activity</div>
+                            </div>
+                        </div>
+                        <div class="receipt-item">
+                            <div class="receipt-icon">♥</div>
+                            <div class="receipt-details">
+                                <div class="receipt-value" id="res-excitement">7 / 10</div>
+                                <div class="receipt-label">Excitement</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <textarea class="comment-box" id="optional-comment" placeholder="Any comments? (Optional)"></textarea>
+                    
+                    <button class="btn btn-primary" id="btn-whatsapp">Confirm invitation</button>
+                </div>
+            </section>
+            
+        </div>
+
+        <div class="app-footer">Made with love by Preyash</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
