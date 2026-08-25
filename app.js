@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
             msg += `\n\n💬 Note from me: "${selections.comment}"`;
         }
 
-        msg += `\n\nCan't wait! 🐾`;
+        msg += `\n\nCan't wait! 🐾\n\nP.S. No dental check-up required for this date 🦷😄`;
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
         window.open(url, '_blank');
     });

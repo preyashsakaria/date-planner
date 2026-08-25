@@ -729,3 +729,29 @@ body {
     margin: 10px 0;
     display: block;
 }
+
+/* ============================================
+   PERSONALISATION ELEMENTS
+   ============================================ */
+.personal-tag {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 12px;
+    letter-spacing: 0.2px;
+}
+
+.health-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    color: #2e7d32;
+    border: 1.5px solid #a5d6a7;
+    border-radius: 30px;
+    padding: 8px 18px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    margin: 0 auto 15px;
+    letter-spacing: 0.3px;
+    animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
