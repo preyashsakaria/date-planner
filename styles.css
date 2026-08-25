@@ -689,7 +689,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 0.75rem;
-    color: rgba(128, 0, 32, 0.25);
+    color: rgba(128, 0, 32, 0.55);
     z-index: 10;
     pointer-events: none;
     letter-spacing: 0.5px;

@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // =============================================
     // MULTILINGUAL GREETING CYCLE
     // =============================================
-    const greetings = ["Hello", "Nǐ Hǎo", "你好", "Hallo", "Hola"];
+    const greetings = ["Hello", "હેલો", "नमस्ते", "Bonjour"];
     let greetingIndex = 0;
     const greetingEl = document.getElementById('greeting');
     if (greetingEl) {
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (commentBox) selections.comment = commentBox.value.trim();
 
         const phone = "61482042704";
-        let msg = `Meow! 😻\n\nI said YES to the date! 🎉\n\nHere are my picks:\n📅 Date: ${selections.date}\n⏰ Time: ${selections.time}\n🍽️ Vibe: ${selections.food}\n🎯 Activity: ${selections.activity}\n♥ Excitement: ${selections.excitement}/10`;
+        let msg = `Woof! 🐶🐾\n\nI said YES to the date! 🎉\n\nHere are my picks:\n📅 Date: ${selections.date}\n⏰ Time: ${selections.time}\n🍽️ Vibe: ${selections.food}\n🎯 Activity: ${selections.activity}\n♥ Excitement: ${selections.excitement}/10`;
 
         if (selections.comment) {
             msg += `\n\n💬 Note from me: "${selections.comment}"`;
